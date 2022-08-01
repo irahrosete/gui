@@ -4,6 +4,7 @@ import java.awt.event.ActionListener;
 
 public class SimpleGui implements ActionListener {
     private JButton button;
+    private MyDrawPanel drawPanel;
 
     public static void main(String[] args) {
         SimpleGui gui = new SimpleGui();
