@@ -6,8 +6,6 @@ import static java.awt.BorderLayout.*;
 
 public class SimpleGui2 implements ActionListener {
     private JFrame frame;
-    private JButton button;
-    private MyDrawPanel panel;
 
     public static void main(String[] args) {
         SimpleGui2 gui = new SimpleGui2();
@@ -18,10 +16,10 @@ public class SimpleGui2 implements ActionListener {
         frame = new JFrame();
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        button = new JButton("change colours");
+        JButton button = new JButton("change colours");
         button.addActionListener(this);
 
-        panel = new MyDrawPanel();
+        MyDrawPanel panel = new MyDrawPanel();
 
         frame.getContentPane().add(SOUTH, button);
         frame.getContentPane().add(CENTER, panel);
